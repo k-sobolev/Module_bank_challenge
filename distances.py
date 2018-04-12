@@ -73,7 +73,7 @@ def find_n_neighbors_multiclass_meta(data, target, list_neighbors,n_classes, n_f
         # test_target_fold = target.iloc[test_fold_indices]
         test_fold_distances = find_n_neighbors_multiclass(test_fold, train_fold, train_target_fold, list_neighbors,n_classes,verbose=False)
         result[test_fold_indices] = test_fold_distances
-        print("Step №", num, "done")
+        print("Step #", num, "done")
     print("Cross_val_distance done!")
     return result
 
